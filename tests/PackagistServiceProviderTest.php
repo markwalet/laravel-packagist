@@ -4,17 +4,43 @@ namespace MarkWalet\Packagist\Tests;
 
 use Illuminate\Config\Repository;
 use MarkWalet\Packagist\Facades\Packagist;
+use MarkWalet\Packagist\PackagistServiceProvider;
 use Spatie\Packagist\PackagistClient;
 use Spatie\Packagist\PackagistUrlGenerator;
 
 class PackagistServiceProviderTest extends LaravelTestCase
 {
     /** @test */
-    public function it_binds_a_packagist_manager_to_the_application()
+    public function it_binds_a_packagist_client_to_the_application()
     {
         $bindings = $this->app->getBindings();
-
         $this->assertArrayHasKey(PackagistClient::class, $bindings);
+
+        $result = $this->app->make(PackagistClient::class);
+        $this->assertInstanceOf(PackagistClient::class, $result);
+    }
+
+    /** @test */
+    public function it_binds_a_url_generator_to_the_application()
+    {
+        $bindings = $this->app->getBindings();
+        $this->assertArrayHasKey(PackagistUrlGenerator::class, $bindings);
+
+        $result = $this->app->make(PackagistUrlGenerator::class);
+        $this->assertInstanceOf(PackagistUrlGenerator::class, $result);
+    }
+
+    /** @test */
+    public function the_service_provider_only_loads_when_one_of_the_bound_classes_should_be_injected()
+    {
+        $provider = new PackagistServiceProvider($this->app);
+
+        $result = $provider->provides();
+
+        $this->assertSame([
+            PackagistClient::class,
+            PackagistUrlGenerator::class,
+        ], $result);
     }
 
     /** @test */
@@ -61,7 +87,7 @@ class PackagistServiceProviderTest extends LaravelTestCase
         $config = $this->app['config'];
         $config->set('services.packagist', [
             'base_url' => 'https://markwalet.me',
-            'repo_url' => 'https://github.com'
+            'repo_url' => 'https://github.com',
         ]);
         /** @var PackagistUrlGenerator $generator */
         $generator = $this->app->make(PackagistUrlGenerator::class);

@@ -46,6 +46,7 @@ class PackagistServiceProvider extends ServiceProvider implements DeferrableProv
     {
         return [
             PackagistClient::class,
+            PackagistUrlGenerator::class,
         ];
     }
 }
