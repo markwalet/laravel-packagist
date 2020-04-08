@@ -22,7 +22,7 @@ class PackagistServiceProvider extends ServiceProvider implements DeferrableProv
         // Bind manager to application.
         $this->app->bind(PackagistClient::class, function (Application $app) {
             $urlGenerator = $app->make(PackagistUrlGenerator::class);
-            
+
             return new PackagistClient(new Client(), $urlGenerator);
         });
 
