@@ -1,0 +1,48 @@
+{
+  "name": "markwalet/laravel-packagist",
+  "description": "A Laravel wrapper for the `spatie/packagist-api` package.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mark Walet",
+      "email": "mark.walet@gmail.com",
+      "homepage": "https://markwalet.me",
+      "role": "Owner"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "illuminate/contracts": "6.*|7.*",
+    "illuminate/support": "6.*|7.*",
+    "spatie/packagist-api": "^2.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5",
+    "orchestra/testbench": "4.*|5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MarkWalet\\Packagist\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MarkWalet\\Packagist\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MarkWalet\\Packagist\\PackagistServiceProvider"
+      ],
+      "aliases": {
+        "Packagist": "MarkWalet\\Packagist\\Facades\\Packagist"
+      }
+    }
+  }
+}
