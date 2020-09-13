@@ -14,13 +14,15 @@ jobs:
       fail-fast: true
       matrix:
         php: [7.2, 7.3, 7.4]
-        illuminate: [6.*, 7.*]
+        illuminate: [6.*, 7.*, 8.*]
         stability: [prefer-lowest, prefer-stable]
         include:
           - illuminate: 6.*
             testbench: 4.*
           - illuminate: 7.*
             testbench: 5.*
+          - illuminate: 8.*
+            testbench: 6.*
         exclude:
           - php: 7.4
             illuminate: 6.*
@@ -29,10 +31,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Cache dependencies
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
           path: ~/.composer/cache/files
           key: dependencies-php-${{ matrix.php }}-illuminate-${{ matrix.illuminate }}-composer-${{ hashFiles('composer.json') }}
