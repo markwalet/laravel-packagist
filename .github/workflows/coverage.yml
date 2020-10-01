@@ -16,7 +16,7 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.composer/cache/files
-          key: dependencies-php-7.4-illuminate-7.*-composer-${{ hashFiles('composer.json') }}
+          key: dependencies-php-7.4-illuminate-8.*-composer-${{ hashFiles('composer.json') }}
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
