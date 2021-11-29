@@ -1,6 +1,15 @@
 # Release Notes
 
 ## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.2.0...master)
+
+## Added
+- Added PHP 8.1 support.
+- Upgraded to PHPUnit 9.
+
+## Removed
+- Removed PHP 7.2 support.
+- Removed PHP 7.3 support.
+
 ## [v1.2.0 (2020-12-13)](https://github.com/markwalet/laravel-packagist/compare/v1.1.0...v1.2.0)
 
 ### Added 
