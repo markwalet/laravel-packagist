@@ -3,7 +3,7 @@ name: coverage
 on: [push, pull_request]
 
 jobs:
-  tests:
+  coverage:
     runs-on: ubuntu-latest
 
     name: Coverage
