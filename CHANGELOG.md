@@ -9,7 +9,6 @@
 ## Removed
 - Removed PHP 7.2 support.
 - Removed PHP 7.3 support.
-- Removed Laravel 6 support.
 
 ## [v1.2.0 (2020-12-13)](https://github.com/markwalet/laravel-packagist/compare/v1.1.0...v1.2.0)
 
