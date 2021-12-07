@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.2.0...master)
 
+## [v1.3.0 (2021-12-07)](https://github.com/markwalet/laravel-packagist/compare/v1.2.0...v1.3.0)
+
 ## Added
 - Added PHP 8.1 support.
 - Upgraded to PHPUnit 9.
