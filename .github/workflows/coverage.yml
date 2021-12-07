@@ -3,7 +3,7 @@ name: coverage
 on: [push, pull_request]
 
 jobs:
-  tests:
+  coverage:
     runs-on: ubuntu-latest
 
     name: Coverage
@@ -16,17 +16,17 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.composer/cache/files
-          key: dependencies-php-7.4-illuminate-8.*-composer-${{ hashFiles('composer.json') }}
+          key: dependencies-php-8.1-illuminate-8.*-composer-${{ hashFiles('composer.json') }}
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 7.4
+          php-version: 8.1
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, gd
           coverage: xdebug
 
       - name: Install dependencies
-        run: composer update --prefer-dist --no-interaction --no-suggest
+        run: composer update --prefer-dist --no-interaction
 
       - name: Calculate coverage statistics
         run: vendor/bin/phpunit --coverage-clover 'clover.xml'
