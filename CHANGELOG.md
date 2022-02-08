@@ -1,6 +1,8 @@
 # Release Notes
 
-## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.2.0...master)
+## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.4.0...master)
+
+## [v1.4.0 (2022-02-08)](https://github.com/markwalet/laravel-packagist/compare/v1.3.0...v1.4.0)
 
 ### Added
 - Added Laravel 9 support.
