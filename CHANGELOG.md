@@ -2,6 +2,14 @@
 
 ## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.4.0...master)
 
+### Added
+- Added Laravel 10 support
+
+### Removed
+- Removed PHP 7.4 support
+- Removed Laravel 6 support
+- Removed Laravel 7 support
+
 ## [v1.4.0 (2022-02-08)](https://github.com/markwalet/laravel-packagist/compare/v1.3.0...v1.4.0)
 
 ### Added
