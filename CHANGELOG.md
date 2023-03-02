@@ -1,6 +1,8 @@
 # Release Notes
 
-## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.4.0...master)
+## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.5.0...master)
+
+## [v1.5.0 (2022-03-02)](https://github.com/markwalet/laravel-packagist/compare/v1.4.0...v1.5.0)
 
 ### Added
 - Added Laravel 10 support.
