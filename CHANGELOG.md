@@ -5,6 +5,9 @@
 ### Added
 - Added Laravel 10 support.
 
+## Fixed
+- Fixed build status badge in readme
+
 ### Removed
 - Removed PHP 7.4 support.
 - Removed Laravel 6 support.
