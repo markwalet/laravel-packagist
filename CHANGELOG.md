@@ -4,6 +4,7 @@
 
 ### Added
 - Added Dependabot integration.
+- Added support for PHP 8.3
 
 ## [v1.5.0 (2022-03-02)](https://github.com/markwalet/laravel-packagist/compare/v1.4.0...v1.5.0)
 
