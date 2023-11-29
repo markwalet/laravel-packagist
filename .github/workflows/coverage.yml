@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.composer/cache/files
           key: dependencies-php-8.2-illuminate-10.*-composer-${{ hashFiles('composer.json') }}
@@ -32,4 +32,4 @@ jobs:
         run: vendor/bin/phpunit --coverage-clover 'clover.xml'
 
       - name: Send coverage statistics
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v3
