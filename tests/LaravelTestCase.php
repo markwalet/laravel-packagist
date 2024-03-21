@@ -15,7 +15,7 @@ class LaravelTestCase extends TestCase
      *
      * @return array
      */
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
             PackagistServiceProvider::class,

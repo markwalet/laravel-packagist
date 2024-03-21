@@ -17,7 +17,7 @@ class PackagistServiceProvider extends ServiceProvider implements DeferrableProv
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         // Bind manager to application.
         $this->app->bind(PackagistClient::class, function (Application $app) {
@@ -42,7 +42,7 @@ class PackagistServiceProvider extends ServiceProvider implements DeferrableProv
      *
      * @return array
      */
-    public function provides()
+    public function provides(): array
     {
         return [
             PackagistClient::class,
