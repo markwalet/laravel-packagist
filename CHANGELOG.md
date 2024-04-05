@@ -2,6 +2,17 @@
 
 ## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.6.0...master)
 
+### Added
+- Added support for Laravel 11
+
+### Changed
+- Upgraded to PHPUnit 10
+
+### Removed
+- Removed support for PHP 8.0
+- Removed support for Laravel 8
+- Removed support for Laravel 9
+
 ## [v1.6.0 (2023-11-29)](https://github.com/markwalet/laravel-packagist/compare/v1.5.0...v1.6.0)
 
 ### Added

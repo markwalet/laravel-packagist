@@ -4,4 +4,4 @@ vendor
 composer.phar
 clover.json
 clover.xml
-.phpunit.result.cache
+.phpunit.cache

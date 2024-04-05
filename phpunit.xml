@@ -2,23 +2,23 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          bootstrap="vendor/autoload.php"
          backupGlobals="false"
-         backupStaticAttributes="false"
          colors="true"
-         verbose="true"
          processIsolation="false"
          stopOnFailure="false"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
-    <coverage includeUncoveredFiles="true" processUncoveredFiles="true">
-        <include>
-            <directory suffix=".php">./src</directory>
-        </include>
-        <exclude>
-            <directory suffix=".php">./src/Exceptions/*</directory>
-        </exclude>
-    </coverage>
-    <testsuites>
-        <testsuite name="Laravel Packagist Test Suite">
-            <directory suffix="Test.php">./tests/</directory>
-        </testsuite>
-    </testsuites>
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+         cacheDirectory=".phpunit.cache"
+         backupStaticProperties="false">
+  <testsuites>
+    <testsuite name="Laravel Packagist Test Suite">
+      <directory suffix="Test.php">./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <source>
+    <include>
+      <directory suffix=".php">./src</directory>
+    </include>
+    <exclude>
+      <directory suffix=".php">./src/Exceptions/*</directory>
+    </exclude>
+  </source>
 </phpunit>
