@@ -5,13 +5,14 @@ namespace MarkWalet\Packagist\Tests;
 use Illuminate\Config\Repository;
 use MarkWalet\Packagist\Facades\Packagist;
 use MarkWalet\Packagist\PackagistServiceProvider;
+use PHPUnit\Framework\Attributes\Test;
 use Spatie\Packagist\PackagistClient;
 use Spatie\Packagist\PackagistUrlGenerator;
 
 class PackagistServiceProviderTest extends LaravelTestCase
 {
-    /** @test */
-    public function it_binds_a_packagist_client_to_the_application()
+    #[Test]
+    public function it_binds_a_packagist_client_to_the_application(): void
     {
         $bindings = $this->app->getBindings();
         $this->assertArrayHasKey(PackagistClient::class, $bindings);
@@ -20,8 +21,8 @@ class PackagistServiceProviderTest extends LaravelTestCase
         $this->assertInstanceOf(PackagistClient::class, $result);
     }
 
-    /** @test */
-    public function it_binds_a_url_generator_to_the_application()
+    #[Test]
+    public function it_binds_a_url_generator_to_the_application(): void
     {
         $bindings = $this->app->getBindings();
         $this->assertArrayHasKey(PackagistUrlGenerator::class, $bindings);
@@ -30,8 +31,8 @@ class PackagistServiceProviderTest extends LaravelTestCase
         $this->assertInstanceOf(PackagistUrlGenerator::class, $result);
     }
 
-    /** @test */
-    public function the_service_provider_only_loads_when_one_of_the_bound_classes_should_be_injected()
+    #[Test]
+    public function the_service_provider_only_loads_when_one_of_the_bound_classes_should_be_injected(): void
     {
         $provider = new PackagistServiceProvider($this->app);
 
@@ -43,8 +44,8 @@ class PackagistServiceProviderTest extends LaravelTestCase
         ], $result);
     }
 
-    /** @test */
-    public function it_registers_a_facade()
+    #[Test]
+    public function it_registers_a_facade(): void
     {
         $this->app->bind(PackagistClient::class, function () {
             $client = $this->getMockBuilder(PackagistClient::class)
@@ -67,8 +68,8 @@ class PackagistServiceProviderTest extends LaravelTestCase
         $this->assertEquals(['result' => 'ok'], $result);
     }
 
-    /** @test */
-    public function it_uses_the_default_configuration_when_no_url_is_set()
+    #[Test]
+    public function it_uses_the_default_configuration_when_no_url_is_set(): void
     {
         /** @var PackagistUrlGenerator $generator */
         $generator = $this->app->make(PackagistUrlGenerator::class);
@@ -80,8 +81,8 @@ class PackagistServiceProviderTest extends LaravelTestCase
         $this->assertEquals('https://repo.packagist.org/test.json', $repoResult);
     }
 
-    /** @test */
-    public function it_can_override_the_url_configuration()
+    #[Test]
+    public function it_can_override_the_url_configuration(): void
     {
         /** @var Repository $config */
         $config = $this->app['config'];
