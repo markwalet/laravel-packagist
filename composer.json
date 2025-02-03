@@ -35,15 +35,8 @@
   "config": {
     "sort-packages": true
   },
-<<<<<<< Updated upstream
-  "minimum-stability": "dev",
-=======
-<<<<<<< Updated upstream
-=======
   "minimum-stability": "dev",
   "prefer-stable": true,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   "extra": {
     "laravel": {
       "providers": [
