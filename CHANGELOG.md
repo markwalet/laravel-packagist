@@ -2,6 +2,9 @@
 
 ## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.7.0...master)
 
+### Added
+- Added support for Laravel 12
+
 ## [v1.7.0 (2024-04-05)](https://github.com/markwalet/laravel-packagist/compare/v1.6.0...v1.7.0)
 
 ### Added
