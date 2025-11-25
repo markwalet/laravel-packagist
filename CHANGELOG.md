@@ -2,6 +2,9 @@
 
 ## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.7.1...master)
 
+### Changed
+- Increase minimum Laravel version to 11.44.2.
+
 ## [v1.7.1 (2025-02-03)](https://github.com/markwalet/laravel-packagist/compare/v1.7.0...v1.7.1)
 
 ### Added
