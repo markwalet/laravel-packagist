@@ -2,6 +2,9 @@
 
 ## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.7.1...main)
 
+### Added
+- Added support for Laravel 13.
+
 ### Changed
 - Increase minimum PHP version to 8.2.
 - Increase minimum Laravel version to 12.0.
