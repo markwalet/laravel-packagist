@@ -6,6 +6,7 @@
 - Added support for Laravel 13.
 - Added support for PHP 8.5.
 - Added Pint and PHPStan static analysis tooling and CI checks.
+- Added a required aggregate GitHub Actions job for the test matrix.
 
 ### Changed
 - Increase minimum PHP version to 8.2.
