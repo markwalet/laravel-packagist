@@ -1,11 +1,9 @@
 # Laravel Packagist
 
-[![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Latest Stable Version](https://poser.pugx.org/markwalet/laravel-packagist/v/stable)](https://packagist.org/packages/markwalet/laravel-packagist)
-[![Build status](https://img.shields.io/github/actions/workflow/status/markwalet/laravel-packagist/tests.yml?branch=master)](https://github.com/markwalet/laravel-git-state/actions)
-[![Coverage](https://codecov.io/gh/markwalet/laravel-packagist/branch/master/graph/badge.svg)](https://codecov.io/gh/markwalet/laravel-packagist)
-[![StyleCI](https://github.styleci.io/repos/254053836/shield?branch=master)](https://github.styleci.io/repos/254053836)
-[![Total Downloads](https://poser.pugx.org/markwalet/laravel-packagist/downloads)](https://packagist.org/packages/markwalet/laravel-packagist)
+[![Build Status](https://github.com/markwalet/laravel-packagist/workflows/tests/badge.svg)](https://github.com/markwalet/laravel-packagist/actions)
+[![Total Downloads](https://img.shields.io/packagist/dt/markwalet/laravel-packagist)](https://packagist.org/packages/markwalet/laravel-packagist)
+[![Latest Stable Version](https://img.shields.io/packagist/v/markwalet/laravel-packagist)](https://packagist.org/packages/markwalet/laravel-packagist)
+[![License](https://img.shields.io/packagist/l/markwalet/laravel-packagist)](https://packagist.org/packages/markwalet/laravel-packagist)
 
 A Laravel wrapper for the [spatie/packagist-api](https://github.com/spatie/packagist-api) package.
 
