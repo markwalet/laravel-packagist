@@ -13,7 +13,7 @@ class LaravelTestCase extends TestCase
      *
      * @param Application $app
      *
-     * @return array
+     * @return array<int, class-string>
      */
     protected function getPackageProviders($app)
     {

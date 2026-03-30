@@ -23,7 +23,7 @@ class PackagistServiceProvider extends ServiceProvider implements DeferrableProv
         $this->app->bind(PackagistClient::class, function (Application $app) {
             $urlGenerator = $app->make(PackagistUrlGenerator::class);
 
-            return new PackagistClient(new Client(), $urlGenerator);
+            return new PackagistClient(new Client, $urlGenerator);
         });
 
         $this->app->bind(PackagistUrlGenerator::class, function (Application $app) {
@@ -40,7 +40,7 @@ class PackagistServiceProvider extends ServiceProvider implements DeferrableProv
     /**
      * Get the services provided by the provider.
      *
-     * @return array
+     * @return array<int, class-string>
      */
     public function provides()
     {

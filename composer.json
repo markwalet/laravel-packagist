@@ -19,8 +19,10 @@
     "spatie/packagist-api": "^2.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^10.5|^11.0",
-    "orchestra/testbench": "10.*|^11.0"
+    "larastan/larastan": "^3.9",
+    "laravel/pint": "^1.29",
+    "orchestra/testbench": "10.*|^11.0",
+    "phpunit/phpunit": "^10.5|^11.0"
   },
   "autoload": {
     "psr-4": {
