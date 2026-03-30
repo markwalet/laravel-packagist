@@ -5,13 +5,16 @@
 ### Added
 - Added support for Laravel 13.
 - Added support for PHP 8.5.
+- Added Pint and PHPStan static analysis tooling and CI checks.
 
 ### Changed
 - Increase minimum PHP version to 8.2.
 - Increase minimum Laravel version to 12.0.
 - Updated dependabot configuration.
+- Tightened facade and test/provider annotations for static analysis.
 
 ### Removed
+- Removed StyleCI configuration.
 - Removed support for PHP 8.1.
 - Removed support for Laravel 10.
 - Removed support for Laravel 11.
