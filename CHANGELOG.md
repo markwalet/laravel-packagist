@@ -1,10 +1,20 @@
 # Release Notes
 
-## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.7.1...master)
+## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.7.1...main)
+
+### Added
+- Added support for Laravel 13.
+- Added support for PHP 8.5.
 
 ### Changed
-- Increase minimum Laravel version to 11.44.2.
+- Increase minimum PHP version to 8.2.
+- Increase minimum Laravel version to 12.0.
 - Updated dependabot configuration.
+
+### Removed
+- Removed support for PHP 8.1.
+- Removed support for Laravel 10.
+- Removed support for Laravel 11.
 
 ## [v1.7.1 (2025-02-03)](https://github.com/markwalet/laravel-packagist/compare/v1.7.0...v1.7.1)
 
