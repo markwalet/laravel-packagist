@@ -4,6 +4,7 @@
 
 ### Added
 - Added support for Laravel 13.
+- Added support for PHP 8.5.
 
 ### Changed
 - Increase minimum PHP version to 8.2.
