@@ -1,6 +1,8 @@
 # Release Notes
 
-## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.7.1...main)
+## [Unreleased](https://github.com/markwalet/laravel-packagist/compare/v1.8.0...main)
+
+## [v1.7.1 (2026-03-30)](https://github.com/markwalet/laravel-packagist/compare/v1.7.1...v1.8.0)
 
 ### Added
 - Added support for Laravel 13.
